@@ -1,0 +1,47 @@
+.sec {
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 3s;
+}
+
+.sams {
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    margin-left: 300px;
+    transition: linear 2s;
+}
+
+.sec:hover {
+    background-color: blue;
+    border-radius: 30%;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.sec:hover .sams {
+    background-color: rgb(155, 0, 0);
+    border-radius: 20%;
+}
+
+.sec {
+    border: gold;
+}
+
+.sams :nth-of-type(1) {
+    transition-timing-function: cubic-bezier();
+}
+
+h1 {
+    background-color: blue;
+    border: 5px solid red;
+    color: magenta;
+    padding: 0.5em;
+    width: 200px;
+    margin-top: auto;
+    text-align: center;
+}
+
+h1:nth-of-type(2n) {
+    background-color: chocolate;
+}
